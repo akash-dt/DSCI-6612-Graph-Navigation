@@ -87,6 +87,12 @@ Null Heuristic            |  Haversine Heuristic | Euclidean Distance Heuristic 
 :-------------------------:|:-------------------------:| :--------------------: | :-------------------------:| :---------------------:|
 ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/eefa6b0a-ce0e-4f64-898b-e9cff39f2e0d) |  ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/422d071b-adab-4695-8c23-76cafb8db6e8)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/84a8c840-be8a-4854-8e21-63113b5bae05)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/7bf2addc-5268-470f-86f3-864cb1be2f4c)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/2048ee67-cbb3-4234-af5c-14552824cb11)
 
+Comparison with Search Algorithm
+DFS          |  Haversine Heuristic | BFS
+:-------------------------:|:-------------------------:| :--------------------: 
+![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/bcc65128-17a1-410f-a5fb-6298459aa8ed) |  ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/422d071b-adab-4695-8c23-76cafb8db6e8)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/84eeeeed-2c2f-4690-be1a-2a9b782d1e70)
+
+
 
 
 
