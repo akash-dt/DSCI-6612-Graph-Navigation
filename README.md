@@ -83,8 +83,8 @@ The black outline resembles the whole graph, the yellow lines show nodes expande
 Results:
 ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/faa4e81e-5bd1-4044-a63d-a34dd7715aed)
 The following table shows five randomly drawn pairs of nodes and the shortest distance found between them using all algorithms along with the number of nodes expanded. Along with that, the shortest route found is compared with the shortest route found for the same pair of nodes using Google Maps.
-Null Heuristic            |  Haversine Heuristic | Euclidean Distance Heuristic | Octile Distance Heuristic |Chebyshev Heuristic |
-:-------------------------:|:-------------------------:| :--------------------: | :-------------------------:| : ---------------------:|
+Null Heuristic            |  Haversine Heuristic | Euclidean Distance Heuristic | Octile Distance Heuristic |Chebyshev Heuristic 
+:-------------------------:|:-------------------------:| :--------------------: | :-------------------------:| :---------------------:|
 ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/eefa6b0a-ce0e-4f64-898b-e9cff39f2e0d) |  ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/422d071b-adab-4695-8c23-76cafb8db6e8)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/84a8c840-be8a-4854-8e21-63113b5bae05)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/7bf2addc-5268-470f-86f3-864cb1be2f4c)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/2048ee67-cbb3-4234-af5c-14552824cb11)
 
 
