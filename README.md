@@ -28,3 +28,4 @@ Number of possible states =Number of nodes =315
 For worst case depth = Number of nodes -1 
 Therefor, State Space Size = n* (average_degree) ^ (n - 1) #n = Number of Nodes
 
+![PNG image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/152945294/0bd7155b-7bd5-466e-bee1-1b364ae670b3
