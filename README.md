@@ -36,9 +36,59 @@ Implementation:
 To find the best algorithm to find the shortest distance efficiently multiple heuristics were implemented and tested and compared.
 
 A* algorithm with heuristic
-
-![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/d0af8ef2-a143-49b5-904d-0ceefba93fee)
+f(n)=g(n)+h(n)
+Where:
+g(n) is the actual cost from the start node to node n, 
+h(n) is the  heuristic from node n to the goal.
 
 Heuristic Implemented:
 -> Null Heuristic: Does not provide any value to heuristic passes 0 {Equivalent to implementing Dijkstra's algorithm}
+
 -> Haversine Heuristic : 
+h(node, goal) = R*acos (sin (latnode) sin(latgoal) + cos(latnode) cos(latgoal) cos(longoal lon, 
+Where:
+• latnode and lonnode are the latitude and longitude of the current node, latgoal and longoal are the latitude and longitude of the goal,
+• R is the Earth's radius.
+
+-> Euclidean Distance:
+h(n)=√(Xgn)2 + (Yg - Yn)2
+Where:
+(xg, Yg) are the coordinates of the goal.
+(2n, Yn) are the coordinates of the current node.
+
+-> Octile Distance:
+h(n) = D x (dx+dy) + (D2-2 × D) x min (dæ, dy) x
+Where:
+-h(n) is the octile distance heuristic from node n to the goal,
+-D is the cost of moving horizontally or vertically,
+-D2 is the cost of moving diagonally,
+dr is the absolute difference in x-coordinates between the current node and the goal,
+dy is the absolute difference in y-coordinates between the current node and the goal.
+
+->Chebyshev Distance
+h(n) = D x max(dx, dy)
+Where:
+-h(n) is the Chebyshev distance heuristic from node n to the goal,
+-D is the cost of moving horizontally, vertically, or diagonally,
+-da is the absolute difference in x-coordinates between the current node and the goal
+- dy is the absolute difference in y-coordinates between the current node and the goal
+
+Comparison :
+For comparison, the same pair of start and end nodes are given to all a* with heuristic and Depth First Search Search and Breath First Search search algorithm. The number of nodes expanded and the shortest distance found is used as an evaluation methodology to find the most efficient algorithm.
+
+Visualization:
+Each implementation is visualized using the folium library to create a map plot of the graph, the number of nodes expanded, and the shortest path found.
+The black outline resembles the whole graph, the yellow lines show nodes expanded and the red line highlights the shortest path found along with its size.
+
+Results:
+![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/faa4e81e-5bd1-4044-a63d-a34dd7715aed)
+The following table shows five randomly drawn pairs of nodes and the shortest distance found between them using all algorithms along with the number of nodes expanded. Along with that, the shortest route found is compared with the shortest route found for the same pair of nodes using Google Maps.
+Null Heuristic            |  Haversine Heuristic
+:-------------------------:|:-------------------------:
+![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/eefa6b0a-ce0e-4f64-898b-e9cff39f2e0d) |  ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/422d071b-adab-4695-8c23-76cafb8db6e8)
+
+
+
+
+
+
