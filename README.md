@@ -51,27 +51,28 @@ Where:
 • R is the Earth's radius.
 
 -> Euclidean Distance:
-h(n)=√(Xgn)2 + (Yg - Yn)2
-Where:
-(xg, Yg) are the coordinates of the goal.
-(2n, Yn) are the coordinates of the current node.
+h(n)=√(Xgn)2 + (Yg - Yn)2<br />
+Where:<br />
+(xg, Yg) are the coordinates of the goal.<br />
+(2n, Yn) are the coordinates of the current node.<br />
 
 -> Octile Distance:
 h(n) = D x (dx+dy) + (D2-2 × D) x min (dæ, dy) x
+
 Where:
--h(n) is the octile distance heuristic from node n to the goal,
--D is the cost of moving horizontally or vertically,
--D2 is the cost of moving diagonally,
-dr is the absolute difference in x-coordinates between the current node and the goal,
-dy is the absolute difference in y-coordinates between the current node and the goal.
+-h(n) is the octile distance heuristic from node n to the goal,<br />
+-D is the cost of moving horizontally or vertically,<br />
+-D2 is the cost of moving diagonally,<br />
+dr is the absolute difference in x-coordinates between the current node and the goal,<br />
+dy is the absolute difference in y-coordinates between the current node and the goal.<br />
 
 ->Chebyshev Distance
 h(n) = D x max(dx, dy)
 Where:
--h(n) is the Chebyshev distance heuristic from node n to the goal,
--D is the cost of moving horizontally, vertically, or diagonally,
--da is the absolute difference in x-coordinates between the current node and the goal
-- dy is the absolute difference in y-coordinates between the current node and the goal
+-h(n) is the Chebyshev distance heuristic from node n to the goal,<br />
+-D is the cost of moving horizontally, vertically, or diagonally,<br />
+-da is the absolute difference in x-coordinates between the current node and the goal<br />
+- dy is the absolute difference in y-coordinates between the current node and the goal<br />
 
 Comparison :
 For comparison, the same pair of start and end nodes are given to all a* with heuristic and Depth First Search Search and Breath First Search search algorithm. The number of nodes expanded and the shortest distance found is used as an evaluation methodology to find the most efficient algorithm.
