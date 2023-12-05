@@ -36,6 +36,7 @@ Implementation:
 To find the best algorithm to find the shortest distance efficiently multiple heuristics were implemented and tested and compared.
 
 A* algorithm with heuristic
+
 ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/d0af8ef2-a143-49b5-904d-0ceefba93fee)
 
 Heuristic Implemented:
