@@ -29,3 +29,15 @@ For worst case depth = Number of nodes -1
 Therefor, State Space Size = n* (average_degree) ^ (n - 1) #n = Number of Nodes
 
 ![PNG image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/152945294/0bd7155b-7bd5-466e-bee1-1b364ae670b3
+
+Going forward the project refers to unique for each node to traverse the graph and find the shortest path the name and address for reference are saved in edge_data.csv and node_data.csv
+
+Implementation:
+To find the best algorithm to find the shortest distance efficiently multiple heuristics were implemented and tested and compared.
+
+A* algorithm with heuristic
+![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/d0af8ef2-a143-49b5-904d-0ceefba93fee)
+
+Heuristic Implemented:
+-> Null Heuristic: Does not provide any value to heuristic passes 0 {Equivalent to implementing Dijkstra's algorithm}
+-> Haversine Heuristic : 
