@@ -28,6 +28,8 @@ Number of possible states =Number of nodes =315
 For worst case depth = Number of nodes -1 
 Therefor, State Space Size = n* (average_degree) ^ (n - 1) #n = Number of Nodes
 
+![PNG image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/152945294/0bd7155b-7bd5-466e-bee1-1b364ae670b3
+
 Going forward the project refers to unique for each node to traverse the graph and find the shortest path the name and address for reference are saved in edge_data.csv and node_data.csv
 
 Implementation:
@@ -43,11 +45,11 @@ Heuristic Implemented:
 -> Null Heuristic: Does not provide any value to heuristic passes 0 {Equivalent to implementing Dijkstra's algorithm}
 
 -> Haversine Heuristic : 
-h(node, goal) = R*acos (sin (latnode) sin(latgoal) + cos(latnode) cos(latgoal) cos(longoal lon, 
-Where:
-• latnode and lonnode are the latitude and longitude of the current node, latgoal and longoal are the latitude and longitude of the goal,
-• R is the Earth's radius.
-
+h(node, goal) = R*acos (sin (latnode) sin(latgoal) + cos(latnode) cos(latgoal) cos(longoal)<br /> 
+Where:<br />
+• latnode and lonnode are the latitude and longitude of the current node, latgoal and longoal are the latitude and longitude of the goal,<br />
+• R is the Earth's radius.<br />
+<br />
 -> Euclidean Distance:
 h(n)=√(Xgn)2 + (Yg - Yn)2<br />
 Where:<br />
