@@ -68,7 +68,7 @@ dy is the absolute difference in y-coordinates between the current node and the 
 
 ->Chebyshev Distance
 h(n) = D x max(dx, dy)
-Where:
+Where:<br />
 -h(n) is the Chebyshev distance heuristic from node n to the goal,<br />
 -D is the cost of moving horizontally, vertically, or diagonally,<br />
 -da is the absolute difference in x-coordinates between the current node and the goal<br />
