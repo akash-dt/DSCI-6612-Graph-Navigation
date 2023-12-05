@@ -6,8 +6,8 @@ The project will implement the A* algorithm, a widely used and efficient graph s
 For these projects, we have used pedestrian paths around and inside our campus [University of New Haven, CT, USA] any location can be used just by defining the name of the place. The code is a jupyter notebook file consisting of all steps implemented in series.
 
 Requirements:
-Google API Key [Generate a Google Maps API key for reverse geocoding]
-Name of the Place [ Name of the place you want to generate graph and search path]
+Google API Key [Generate a Google Maps API key for reverse geocoding]</br>
+Name of the Place [ Name of the place you want to generate graph and search path]</br>
 
 Workflow:
 Graph Generation: The code starts by generating a graph based on the place name provided using OpenSourceMaps Library. The graph generated for these project refers to a pedestrian walking path but the same code can be modified to generate a driving path by just defining driving_path as 'driving' instead of 'walking' to get a roadway graph.
