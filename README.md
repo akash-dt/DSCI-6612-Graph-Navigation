@@ -58,8 +58,8 @@ Where:<br />
 
 -> Octile Distance:
 h(n) = D x (dx+dy) + (D2-2 × D) x min (dæ, dy) x
-
-Where:
+<br />
+Where:<br />
 -h(n) is the octile distance heuristic from node n to the goal,<br />
 -D is the cost of moving horizontally or vertically,<br />
 -D2 is the cost of moving diagonally,<br />
@@ -67,7 +67,7 @@ dr is the absolute difference in x-coordinates between the current node and the 
 dy is the absolute difference in y-coordinates between the current node and the goal.<br />
 
 ->Chebyshev Distance
-h(n) = D x max(dx, dy)
+h(n) = D x max(dx, dy)<br />
 Where:<br />
 -h(n) is the Chebyshev distance heuristic from node n to the goal,<br />
 -D is the cost of moving horizontally, vertically, or diagonally,<br />
