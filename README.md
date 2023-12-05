@@ -10,9 +10,11 @@ Google API Key [Generate a Google Maps API key for reverse geocoding]
 Name of the Place [ Name of the place you want to generate graph and search path]
 
 Workflow:
-Graph Generation: The code starts by generating a graph based on the place name provided using OpenSourceMaps Library. The graph generated for these project refers to a pedestrian walking path but the same code can be modified to generate a driving path by just defining driving_path as 'driving' instead of 'walking' to get a roadway graph.
+Graph Generation: The code starts by generating a graph based on the place name provided using OpenSourceMaps Library. The graph generated for these project refers to a pedestrian walking path but the same code can be modified to generate a driving path by just defining driving_path as 'driving' instead of 'walking' to get a roadway graph.\n
+
 Weighting:
-The graph generated is a multidirectional network graph i.e. each pair of nodes has two sets of edges or a pair of weights one from each node as starting to another node. To move forward weights of each edge are calculated using the distance between pairs of nodes.
+The graph generated is a multidirectional network graph i.e. each pair of nodes has two sets of edges or a pair of weights one from each node as starting to another node. To move forward weights of each edge are calculated using the distance between pairs of nodes.\n
+
 Reverse GeoCoding:
 The graph generated does not contain the name and address of the place the node is marked so a reverse geocoding is implemented to get the Google Maps name and address of the node based on lat and long coordinates.
 
