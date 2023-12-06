@@ -34,12 +34,12 @@ Going forward the project refers to unique for each node to traverse the graph a
 Implementation:
 To find the best algorithm to find the shortest distance efficiently multiple heuristics were implemented and tested and compared.
 
-A* algorithm with heuristic
-f(n)=g(n)+h(n)
-Where:
-g(n) is the actual cost from the start node to node n, 
-h(n) is the  heuristic from node n to the goal.
-
+A* algorithm with heuristic.<br />
+f(n)=g(n)+h(n).<br />
+Where:.<br />
+g(n) is the actual cost from the start node to node n, .<br />
+h(n) is the  heuristic from node n to the goal..<br />
+.<br />
 Heuristic Implemented:
 -> Null Heuristic: Does not provide any value to heuristic passes 0 {Equivalent to implementing Dijkstra's algorithm}
 
@@ -74,7 +74,7 @@ Where:<br />
 - dy is the absolute difference in y-coordinates between the current node and the goal<br />
 
 Comparison :
-For comparison, the same pair of start and end nodes are given to all a* with heuristic and Depth First Search Search and Breath First Search search algorithm. The number of nodes expanded and the shortest distance found is used as an evaluation methodology to find the most efficient algorithm.
+For comparison, the same pair of start and end nodes are given to all a* with the heuristic and Depth First Search Search and Breath First Search algorithm. The number of nodes expanded and the shortest distance found is used as an evaluation methodology to find the most efficient algorithm.
 
 Visualization:
 Each implementation is visualized using the folium library to create a map plot of the graph, the number of nodes expanded, and the shortest path found.
@@ -82,7 +82,7 @@ The black outline resembles the whole graph, the yellow lines show nodes expande
 
 Results:
 ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/faa4e81e-5bd1-4044-a63d-a34dd7715aed)
-The following table shows five randomly drawn pairs of nodes and the shortest distance found between them using all algorithms along with the number of nodes expanded. Along with that, the shortest route found is compared with the shortest route found for the same pair of nodes using Google Maps.
+The following table shows five randomly drawn pairs of nodes and the shortest distance found between them using all algorithms along with the number of nodes expanded. Additionally, the shortest route found is compared with the shortest route found for the same pair of nodes using Google Maps.
 Null Heuristic            |  Haversine Heuristic | Euclidean Distance Heuristic | Octile Distance Heuristic |Chebyshev Heuristic 
 :-------------------------:|:-------------------------:| :--------------------: | :-------------------------:| :---------------------:|
 ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/eefa6b0a-ce0e-4f64-898b-e9cff39f2e0d) |  ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/422d071b-adab-4695-8c23-76cafb8db6e8)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/84a8c840-be8a-4854-8e21-63113b5bae05)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/7bf2addc-5268-470f-86f3-864cb1be2f4c)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/2048ee67-cbb3-4234-af5c-14552824cb11)
@@ -93,6 +93,8 @@ DFS          |  Haversine Heuristic | BFS
 ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/bcc65128-17a1-410f-a5fb-6298459aa8ed) |  ![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/422d071b-adab-4695-8c23-76cafb8db6e8)|![image](https://github.com/akash-dt/DSCI-6612-Graph-Navigation/assets/153000756/84eeeeed-2c2f-4690-be1a-2a9b782d1e70)
 
 
+Conclusion:
+The A* Search algorithm with the Haversine Heuristic is the most efficient algorithm to find the shortest distance for these project because it found the shortest past by expanding the least number of nodes. Other heuristics gave the same result as the null heuristic because the weight of each edge is the same as the actual distance between the nodes and heuristics are not able to deliver any advantage over it.
 
 
 
